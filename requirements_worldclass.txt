@@ -1,0 +1,55 @@
+# World-Class Research Setup - Essential Packages Only
+# Compatible with Google Colab (Python 3.12+)
+
+# Core Deep Learning (most already in Colab)
+torch>=2.1.0
+pytorch-lightning>=2.1.0
+
+# Time Series Models
+prophet
+pytorch-forecasting>=1.1.0
+
+# Gradient Boosting
+xgboost
+lightgbm
+catboost
+
+# Data Processing (most already in Colab)
+pandas
+numpy
+scipy
+geopandas
+xarray
+h5py
+
+# API & Web Scraping
+requests
+beautifulsoup4
+
+# Visualization (most already in Colab)
+matplotlib
+seaborn
+plotly
+
+# Statistical Analysis
+statsmodels
+scikit-learn
+optuna
+
+# Performance & Monitoring
+tqdm
+tensorboard
+wandb
+
+# Configuration & Utils
+pyyaml
+python-dotenv
+joblib
+
+# Time Series Analysis
+tslearn
+sktime
+
+# Model Explainability
+shap
+lime
