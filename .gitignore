@@ -30,17 +30,22 @@ wheels/
 # Environment variables
 .env
 
-# Data files (uncomment if you don't want to track data)
-# data/raw/*
-# data/processed/*
-# !data/raw/.gitkeep
-# !data/processed/.gitkeep
+# Data files (too large for GitHub - regenerated from NASA POWER API)
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!data/raw/era5/.gitkeep
+!data/raw/nasa_power/.gitkeep
+!data/raw/noaa_ghcn/.gitkeep
 
-# Large model files
+# Large model files (keep essential ones for deployment)
 *.h5
-*.pkl
+# *.pkl  # Commented - we need scaler.pkl
 *.joblib
-*.model
+# *.model  # Commented - we need model files
 
 # ERA5 NetCDF files
 *.nc
