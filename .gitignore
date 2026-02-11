@@ -69,3 +69,7 @@ results/*.csv
 
 # Logs
 *.log
+
+# Personal Study Documentation (not for research paper submission)
+COMPLETE_PROJECT_GUIDE.md
+PART_*.md
