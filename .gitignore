@@ -41,11 +41,16 @@ data/external/*
 !data/raw/nasa_power/.gitkeep
 !data/raw/noaa_ghcn/.gitkeep
 
-# Large model files (keep essential ones for deployment)
-*.h5
-# *.pkl  # Commented - we need scaler.pkl
+# Large model files (keep essential ones in models/ for reproducibility)
+# *.h5  # Allowing - needed for LSTM and GRU models
+# *.pkl  # Allowing - needed for XGBoost, RF, LightGBM, scaler
 *.joblib
-# *.model  # Commented - we need model files
+
+# Ignore old/stale model formats
+*.pt
+*.pth
+*.cbm
+*.onnx
 
 # ERA5 NetCDF files
 *.nc
